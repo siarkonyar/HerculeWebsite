@@ -11,9 +11,14 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <span class="logo-icon">🏋️</span>
-                <span class="logo-text">Hercule</span>
+                <img src="assets/logo/logo.svg" alt="Hercule Logo" class="logo-icon">
+                <span class="logo-text">ercule</span>
             </div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#screenshots">Screenshots</a></li>
@@ -26,7 +31,7 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Transform Your Fitness Journey with <span class="highlight">Hercule</span></h1>
+                <h1 class="hero-title">Track Your Fitness Journey with <span class="highlight"><img src="assets/logo/logo.svg" alt="H" class="inline-logo">ercule</span></h1>
                 <p class="hero-subtitle">Track your workouts, monitor your progress, and achieve your fitness goals with the ultimate workout companion.</p>
                 <div class="cta-buttons">
                     <a href="#download" class="btn btn-primary">Download Now</a>
@@ -35,7 +40,7 @@
             </div>
             <div class="hero-image">
                 <div class="phone-mockup">
-                    <img src="images/calendar-screen.png" alt="Hercule Calendar View" class="screenshot-main">
+                    <img src="assets/images/today-log-screen.png" alt="Hercule Today Log View" class="screenshot-main">
                 </div>
             </div>
         </div>
@@ -95,7 +100,7 @@
 
             <div class="screenshots-grid">
                 <div class="screenshot-item">
-                    <img src="images/calendar-screen.png" alt="Calendar View">
+                    <img src="assets/images/calendar-screen.png" alt="Calendar View">
                     <div class="screenshot-caption">
                         <h4>Calendar View</h4>
                         <p>Track your training schedule at a glance</p>
@@ -103,7 +108,7 @@
                 </div>
 
                 <div class="screenshot-item">
-                    <img src="images/settings-screen.png" alt="Custom Labels">
+                    <img src="assets/images/settings-screen.png" alt="Custom Labels">
                     <div class="screenshot-caption">
                         <h4>Custom Labels</h4>
                         <p>Organize workouts your way</p>
@@ -111,7 +116,7 @@
                 </div>
 
                 <div class="screenshot-item">
-                    <img src="images/log-exercise-screen.png" alt="Exercise Logging">
+                    <img src="assets/images/log-exercise-screen.png" alt="Exercise Logging">
                     <div class="screenshot-caption">
                         <h4>Quick Exercise Entry</h4>
                         <p>Smart search with autocomplete</p>
@@ -119,7 +124,7 @@
                 </div>
 
                 <div class="screenshot-item">
-                    <img src="images/today-log-screen.png" alt="Today's Workout">
+                    <img src="assets/images/today-log-screen.png" alt="Today's Workout">
                     <div class="screenshot-caption">
                         <h4>Today's Workout</h4>
                         <p>Detailed set and rep tracking</p>
@@ -127,7 +132,7 @@
                 </div>
 
                 <div class="screenshot-item">
-                    <img src="images/label-selection-screen.png" alt="Label Selection">
+                    <img src="assets/images/label-selection-screen.png" alt="Label Selection">
                     <div class="screenshot-caption">
                         <h4>Choose Your Focus</h4>
                         <p>Select muscle groups for the day</p>
@@ -135,7 +140,7 @@
                 </div>
 
                 <div class="screenshot-item">
-                    <img src="images/workout-detail-screen.png" alt="Workout Details">
+                    <img src="assets/images/workout-detail-screen.png" alt="Workout Details">
                     <div class="screenshot-caption">
                         <h4>Workout History</h4>
                         <p>Review past performance</p>
@@ -143,7 +148,7 @@
                 </div>
 
                 <div class="screenshot-item">
-                    <img src="images/add-label-screen.png" alt="Add Label">
+                    <img src="assets/images/add-label-screen.png" alt="Add Label">
                     <div class="screenshot-caption">
                         <h4>Create Labels</h4>
                         <p>Build your custom workout system</p>
@@ -169,7 +174,7 @@
                     </ul>
                 </div>
                 <div class="highlight-image">
-                    <img src="images/today-log-screen.png" alt="Exercise Tracking">
+                    <img src="assets/images/calendar-screen.png" alt="Exercise Tracking">
                 </div>
             </div>
         </div>
@@ -182,13 +187,11 @@
                 <h2>Ready to Start Your Journey?</h2>
                 <p>Download Hercule now and take control of your fitness goals</p>
                 <div class="download-buttons">
-                    <a href="#" class="btn btn-download">
-                        <span class="download-icon">📱</span>
-                        Download for iOS
+                    <a href="#" class="download-button-link">
+                        <img src="assets/buttons/Apple-Download-Button.png" alt="Download on the App Store" class="download-button-img">
                     </a>
-                    <a href="#" class="btn btn-download">
-                        <span class="download-icon">🤖</span>
-                        Download for Android
+                    <a href="#" class="download-button-link">
+                        <img src="assets/buttons/Android-Download-Button.png" alt="Get it on Google Play" class="download-button-img">
                     </a>
                 </div>
                 <p class="download-note">Free to download • No ads • Privacy focused</p>
@@ -202,8 +205,8 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
-                        <span class="logo-icon">🏋️</span>
-                        <span class="logo-text">Hercule</span>
+                        <img src="assets/logo/logo.svg" alt="Hercule Logo" class="logo-icon">
+                        <span class="logo-text">ercule</span>
                     </div>
                     <p>Your ultimate fitness companion</p>
                 </div>
@@ -216,19 +219,19 @@
                             <li><a href="#download">Download</a></li>
                         </ul>
                     </div>
-                    <div class="footer-column">
+                    <!-- <div class="footer-column">
                         <h4>Company</h4>
                         <ul>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
                             <li><a href="#">Support</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="footer-column">
                         <h4>Legal</h4>
                         <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="https://siarkonyar.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                            <li><a href="https://siarkonyar.com/tos" target="_blank" rel="noopener noreferrer">Terms of Service</a></li>
                         </ul>
                     </div>
                 </div>
@@ -238,5 +241,32 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
