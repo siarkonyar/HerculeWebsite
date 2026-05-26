@@ -13,17 +13,20 @@ A modern, responsive promotional website for the Hercule fitness tracking app.
 
 ## Setup Instructions
 
-### 1. Add Screenshots
+### 1. Screenshots
 
-Place your app screenshots in the `/images` folder with the following names:
+The gallery is wired to the latest uploaded screenshots in `assets/images`:
 
-- `calendar-screen.png` - Main calendar view
-- `settings-screen.png` - Settings/labels page
-- `log-exercise-screen.png` - Exercise logging screen
-- `today-log-screen.png` - Today's workout log
-- `label-selection-screen.png` - Label selection modal
-- `workout-detail-screen.png` - Detailed workout view
-- `add-label-screen.png` - Add new label screen
+- `dashboard-screen.png` - Main dashboard
+- `profile-screen.png` - Profile and label overview
+- `calendar-screen.png` - Calendar view
+- `log-exercise-screen.png` - Exercise search and logging screen
+- `edit-exercise-screen.png` - Edit exercise screen
+- `share-day-screen.png` - Shareable workout summary image
+
+### App Store
+
+Hercule is published on the App Store: https://apps.apple.com/gb/app/hercule-fitness-tracker/id6755726344
 
 ### 2. Open the Website
 
@@ -45,13 +48,13 @@ HerculeWebsite/
 ├── index.html          # Main HTML file
 ├── styles.css          # All styling
 ├── images/            # App screenshots
+│   ├── dashboard-screen.png
+│   ├── profile-screen.png
 │   ├── calendar-screen.png
-│   ├── settings-screen.png
 │   ├── log-exercise-screen.png
-│   ├── today-log-screen.png
-│   ├── label-selection-screen.png
-│   ├── workout-detail-screen.png
-│   └── add-label-screen.png
+│   ├── edit-exercise-screen.png
+│   ├── share-day-screen.png
+│   └── IMG_0368.PNG
 └── README.md          # This file
 ```
 
