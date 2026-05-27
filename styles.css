@@ -224,6 +224,10 @@ body {
     transform: translateY(-3px);
 }
 
+.support-button {
+    margin-top: 1rem;
+}
+
 .hero-image {
     display: flex;
     justify-content: center;
