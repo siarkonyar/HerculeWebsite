@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
       <div class="container">
@@ -27,7 +32,7 @@
         <ul class="nav-links" id="navigation-links">
           <li><a href="#ai-coach">AI Coach</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#screenshots">Interface</a></li>
           <li><a href="#download">Download</a></li>
           <li><a href="mailto:siarkonyar@gmail.com?subject=Hercule%20Support" class="nav-support">Support</a></li>
         </ul>
@@ -38,22 +43,27 @@
     <section id="ai-coach" class="hero" aria-labelledby="coach-title">
       <div class="container">
         <div class="hero-content">
-          <h1 id="coach-title" class="hero-title">Meet your <span class="hero-brand">AI gym coach</span></h1>
+          <h1 id="coach-title" class="hero-title">Meet your new <span class="hero-brand">AI gym coach</span></h1>
           <p class="hero-subtitle">
-            Ask gym-related questions, get training guidance, and create
-            structured workout programs. Review a proposed program, then accept
-            it to save it directly to your programs.
+            Ask for training advice and get custom workout programmes generated instantly. Review the routines the AI builds for you and save them straight to your schedule.
           </p>
           <div class="cta-buttons">
-            <a href="#download" class="btn btn-primary">Download Now</a>
-            <a href="#features" class="btn btn-secondary">Learn More</a>
+            <!-- Specular Buttons -->
+            <a href="#download" class="specular-button specular-button--md specular-button--primary">
+              <div class="specular-button__fx"><canvas></canvas></div>
+              <span class="specular-button__label">Download Now</span>
+            </a>
+            <a href="#features" class="specular-button specular-button--md specular-button--secondary">
+              <div class="specular-button__fx"><canvas></canvas></div>
+              <span class="specular-button__label">See Features</span>
+            </a>
           </div>
         </div>
         <div class="hero-image">
           <div class="phone-mockup">
             <img
               src="assets/images/ai-coach-screen.png"
-              alt="Hercule AI beta conversation proposing a structured Leg Growth Program with exercises, sets, and rep ranges"
+              alt="Hercule AI beta conversation proposing a structured Leg Growth Programme with exercises, sets, and rep ranges"
               class="screenshot-main"
               width="1179"
               height="2556"
@@ -67,81 +77,91 @@
     <!-- Features Section -->
     <section id="features" class="features">
       <div class="container">
-        <h2 class="section-title">Powerful Features for Serious Athletes</h2>
-        <p class="section-subtitle">
-          Everything you need to track and optimize your workouts
-        </p>
+        <div class="section-header">
+          <h2 class="section-title">Built for Serious Lifters</h2>
+          <p class="section-subtitle">
+            Clean, fast, and packed with the tools you need to track your progress.
+          </p>
+        </div>
 
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">✨</div>
-            <h3>Meet your AI gym coach</h3>
+            <div class="feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+            </div>
+            <h3>AI Coaching</h3>
             <p>
-              Ask gym-related questions, get training guidance, and create
-              structured workout programs. Review a proposed program, then accept
-              it to save it directly to your programs.
+              Get training advice and let the AI build structured workout programmes for you. Review them and save them directly to your app.
             </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon" aria-hidden="true">📋</div>
-            <h3>Build your own workout programs</h3>
-            <p>Create and save workout programs in Hercule.</p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
+            </div>
+            <h3>Custom Programmes</h3>
+            <p>
+              Build, save, and run your own workout programmes exactly the way you want them.
+            </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">📅</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+            </div>
             <h3>Smart Calendar</h3>
             <p>
-              Visualize your workout schedule with an intuitive calendar view.
-              Track which muscle groups you've trained and plan your week
-              effectively.
+              See your whole training history at a glance. Track which muscle groups you've hit and plan your week ahead.
             </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">📊</div>
-            <h3>Detailed Exercise Logging</h3>
+            <div class="feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>
+            </div>
+            <h3>Detailed Logging</h3>
             <p>
-              Log every set, rep, and weight with precision. Track warmup sets,
-              working sets, PR attempts, drop sets, and failure sets with
-              color-coded indicators.
+              Log every set, rep, and weight easily. Tag your warm-ups, working sets, drop sets, and failure sets with clear colours.
             </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">🏷️</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>
+            </div>
             <h3>Custom Labels</h3>
             <p>
-              Organize your workouts with custom labels like Upper, Chest +
-              Back, Sharms, Legs, Pull, and Push. Create your own workout split
-              system.
+              Tag your training days however you like—Upper, Lower, Push, Pull, or anything else. Create the split that works for you.
             </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">💪</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+            </div>
             <h3>Exercise Library</h3>
             <p>
-              Access a comprehensive database of exercises with smart search and
-              autocomplete. Quickly find and log your favorite movements.
+              Search a huge database of exercises. Find what you need quickly and add it straight to your workout.
             </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">📈</div>
+            <div class="feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
             <h3>Progress Tracking</h3>
             <p>
-              Monitor your strength gains and volume over time. Track PRs and see your previous sessions instantly.
+              Keep track of your strength gains and volume. See your past sessions and track your personal bests over time.
             </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">🎨</div>
-            <h3>Beautiful Design</h3>
+            <div class="feature-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="9" x2="9" y1="21" y2="9"/></svg>
+            </div>
+            <h3>Clean Design</h3>
             <p>
-              Train in style with a modern dark theme featuring vibrant orange
-              accents. Clean, intuitive interface designed for the gym.
+              Train without distractions. A fast, modern dark theme built specifically to be easy to use in the gym.
             </p>
           </div>
         </div>
@@ -151,31 +171,33 @@
     <!-- Screenshots Section -->
     <section id="screenshots" class="screenshots">
       <div class="container">
-        <h2 class="section-title">See Hercule in action</h2>
-        <p class="section-subtitle">
-          Explore the app, from workout logging to programs and AI coaching.
-        </p>
+        <div class="section-header">
+          <h2 class="section-title">Hercule in Action</h2>
+          <p class="section-subtitle">
+            Take a look around the app, from logging your lifts to chatting with your AI coach.
+          </p>
+        </div>
 
         <div class="screenshots-grid">
           <div class="screenshot-item">
             <img
               src="assets/images/programs-screen.png"
-              alt="Choose Program screen with saved workout programs"
+              alt="Choose Programme screen with saved workout programmes"
               width="1179"
               height="2556"
               loading="lazy"
               decoding="async"
             />
             <div class="screenshot-caption">
-              <h4>Build your own workout programs</h4>
-              <p>Create and save workout programs in Hercule.</p>
+              <h4>Your Programmes</h4>
+              <p>Build and manage all your saved workout routines.</p>
             </div>
           </div>
 
           <div class="screenshot-item">
             <img
               src="assets/images/ai-coach-screen.png"
-              alt="Hercule AI beta chat and proposed workout program"
+              alt="Hercule AI beta chat and proposed workout programme"
               width="1179"
               height="2556"
               loading="lazy"
@@ -183,8 +205,8 @@
             />
             <div class="screenshot-caption">
               <span class="beta-badge">Beta</span>
-              <h4>Meet your AI gym coach</h4>
-              <p>Ask gym-related questions, get training guidance, and create structured workout programs.</p>
+              <h4>AI Coaching</h4>
+              <p>Get advice and let the AI generate a structured workout for you.</p>
             </div>
           </div>
 
@@ -199,7 +221,7 @@
             />
             <div class="screenshot-caption">
               <h4>Dashboard</h4>
-              <p>Training overview and quick navigation</p>
+              <p>Your daily training overview and quick access to everything.</p>
             </div>
           </div>
 
@@ -211,8 +233,8 @@
               decoding="async"
             />
             <div class="screenshot-caption">
-              <h4>Profile & Labels</h4>
-              <p>Keep streaks, stats, and label collection together</p>
+              <h4>Profile</h4>
+              <p>Keep track of your streaks, stats, and training tags in one place.</p>
             </div>
           </div>
 
@@ -227,7 +249,7 @@
             />
             <div class="screenshot-caption">
               <h4>Calendar</h4>
-              <p>Plan sessions and spot training days quickly</p>
+              <p>Check your consistency and look back at past workouts quickly.</p>
             </div>
           </div>
 
@@ -242,7 +264,7 @@
             />
             <div class="screenshot-caption">
               <h4>Log Exercise</h4>
-              <p>Search, pick, and add exercises fast</p>
+              <p>Find and add exercises to your workout with zero friction.</p>
             </div>
           </div>
 
@@ -257,7 +279,7 @@
             />
             <div class="screenshot-caption">
               <h4>Edit Exercise</h4>
-              <p>Tune sets, reps, and weight with precision</p>
+              <p>Easily adjust your sets, reps, and weights on the fly.</p>
             </div>
           </div>
 
@@ -272,7 +294,7 @@
             />
             <div class="screenshot-caption">
               <h4>Share Your Day</h4>
-              <p>Generate a shareable image of your daily workout</p>
+              <p>Create clean, shareable images of your workout summary.</p>
             </div>
           </div>
         </div>
@@ -284,19 +306,14 @@
       <div class="container">
         <div class="highlight-content">
           <div class="highlight-text">
-            <h2>Track Every Rep, Crush Every Goal</h2>
+            <h2>Track Every Rep, Hit Your Goals</h2>
             <ul class="highlight-list">
-              <li>
-                ✅ Color-coded set types (Warmup, Working, PR, Drop, Failure)
-              </li>
-              <li>✅ Support for both kg and lbs measurements</li>
-              <li>✅ Previous session history for every exercise</li>
-              <li>✅ Clean, distraction-free interface</li>
-              <li>✅ Fast and responsive performance</li>
-              <li>
-                ✅ Perfect for powerlifters, bodybuilders, and fitness
-                enthusiasts
-              </li>
+              <li>Colour-coded set types (Warm-up, Working, PR, Drop, Failure)</li>
+              <li>Support for both metric (kg) and imperial (lbs) units</li>
+              <li>See your previous session history for every exercise</li>
+              <li>A clean, distraction-free environment so you can focus</li>
+              <li>Fast, responsive app performance</li>
+              <li>Built for powerlifters, bodybuilders, and anyone serious about the gym</li>
             </ul>
           </div>
           <div class="highlight-image">
@@ -316,38 +333,40 @@
     <!-- Download Section -->
     <section id="download" class="download">
       <div class="container">
-        <div class="download-content">
-          <h2>Ready to Start Your Journey?</h2>
-          <p>Download Hercule now and take control of your fitness goals</p>
-          <div class="download-buttons">
-            <a
-              href="https://apps.apple.com/gb/app/hercule-fitness-tracker/id6755726344"
-              class="download-button-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="assets/buttons/Apple-Download-Button.png"
-                alt="Download on the App Store"
-                class="download-button-img"
-              />
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.siar.konyar.fitnessChronicle&pcampaignid=web_share"
-              class="download-button-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="assets/buttons/Android-Download-Button.png"
-                alt="Get it on Google Play"
-                class="download-button-img"
-              />
-            </a>
+        <div class="download-inner">
+          <div class="download-content">
+            <h2>Ready to get started?</h2>
+            <p>Download Hercule today and take control of your training.</p>
+            <div class="download-buttons">
+              <a
+                href="https://apps.apple.com/gb/app/hercule-fitness-tracker/id6755726344"
+                class="download-button-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="assets/buttons/Apple-Download-Button.png"
+                  alt="Download on the App Store"
+                  class="download-button-img"
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.siar.konyar.fitnessChronicle&pcampaignid=web_share"
+                class="download-button-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="assets/buttons/Android-Download-Button.png"
+                  alt="Get it on Google Play"
+                  class="download-button-img"
+                />
+              </a>
+            </div>
+            <p class="download-note">
+              Free for all users during the beta period. No subscription required.
+            </p>
           </div>
-          <p class="download-note">
-            Free for everyone during beta. No subscription required.
-          </p>
         </div>
       </div>
     </section>
@@ -355,7 +374,9 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-content">
+        <div class="footer-grid">
+          
+          <!-- Brand Column -->
           <div class="footer-brand">
             <div class="logo">
               <img
@@ -365,81 +386,95 @@
               />
               <span class="logo-text">ercule</span>
             </div>
-            <p>Your ultimate fitness companion</p>
-          </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <h4>Product</h4>
-              <ul>
-                <li><a href="#ai-coach">AI Coach</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#screenshots">Screenshots</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="mailto:siarkonyar@gmail.com?subject=Hercule%20Support">Support</a></li>
-              </ul>
-            </div>
-            <!-- <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </div> -->
-            <div class="footer-column">
-              <h4>Legal</h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://siarkonyar.com/privacy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Privacy Policy</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://siarkonyar.com/tos"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Terms of Service</a
-                  >
-                </li>
-              </ul>
+            <p class="footer-mission">
+              Your ultimate fitness companion. Designed to track, analyse, and elevate your training journey without the clutter.
+            </p>
+            <div class="social-links">
+              <!-- Placeholder social icons, replace hrefs with actual links later -->
+              <a href="#" class="social-icon" aria-label="Twitter/X">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
             </div>
           </div>
+
+          <!-- Links Columns -->
+          <div class="footer-column">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#ai-coach">AI Coach</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#screenshots">Interface</a></li>
+              <li><a href="#download">Download App</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="mailto:siarkonyar@gmail.com?subject=Hercule%20Support">Help & Support</a></li>
+              <li><a href="mailto:siarkonyar@gmail.com?subject=Hercule%20Feedback">Feedback</a></li>
+              <li><a href="mailto:siarkonyar@gmail.com?subject=Hercule%20Contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="tos.html">Terms of Service</a></li>
+            </ul>
+          </div>
+
         </div>
+
         <div class="footer-bottom">
-          <p>&copy; 2025 Hercule. All rights reserved.</p>
+          <p>&copy; 2026 Hercule. All rights reserved.</p>
         </div>
       </div>
     </footer>
 
     <script>
-      // Mobile menu toggle
+      // Header Hide/Show on Scroll Logic
+      const navbar = document.querySelector(".navbar");
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > lastScrollY && window.scrollY > 80) {
+          navbar.classList.add("navbar-hidden");
+        } else {
+          navbar.classList.remove("navbar-hidden");
+        }
+        lastScrollY = window.scrollY;
+      });
+
+      // Mobile menu toggle & Scroll Lock
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
+      const body = document.body;
 
       const closeMenu = () => {
         hamburger.classList.remove("active");
         navLinks.classList.remove("active");
         hamburger.setAttribute("aria-expanded", "false");
+        body.style.overflow = '';
       };
 
       hamburger.addEventListener("click", () => {
         const isOpen = hamburger.classList.toggle("active");
         navLinks.classList.toggle("active", isOpen);
         hamburger.setAttribute("aria-expanded", String(isOpen));
+        body.style.overflow = isOpen ? 'hidden' : '';
       });
 
-      // Close menu when clicking on a link
       document.querySelectorAll(".nav-links a").forEach((link) => {
         link.addEventListener("click", () => {
           closeMenu();
         });
       });
 
-      // Close menu when clicking outside
       document.addEventListener("click", (e) => {
         if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
           closeMenu();
@@ -451,6 +486,101 @@
           closeMenu();
           hamburger.focus();
         }
+      });
+
+      // Scroll Reveal Animation
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.feature-card, .screenshot-item, .highlight-content').forEach(el => {
+        el.classList.add('reveal-on-scroll');
+        observer.observe(el);
+      });
+
+      // --- VANILLA JS SPECULAR BUTTON EFFECT ---
+      document.querySelectorAll('.specular-button').forEach(button => {
+        const canvas = button.querySelector('canvas');
+        if (!canvas) return;
+        
+        const ctx = canvas.getContext('2d');
+        let rect = button.getBoundingClientRect();
+        const dpr = window.devicePixelRatio || 1;
+
+        const updateCanvasSize = () => {
+          rect = button.getBoundingClientRect();
+          canvas.width = (rect.width + 40) * dpr;
+          canvas.height = (rect.height + 40) * dpr;
+          ctx.scale(dpr, dpr);
+          canvas.style.width = `${rect.width + 40}px`;
+          canvas.style.height = `${rect.height + 40}px`;
+        };
+
+        window.addEventListener('resize', updateCanvasSize);
+        updateCanvasSize();
+
+        let mouseX = -1000;
+        let mouseY = -1000;
+        let isHovering = false;
+
+        button.addEventListener('mousemove', (e) => {
+          rect = button.getBoundingClientRect();
+          mouseX = e.clientX - rect.left + 20; 
+          mouseY = e.clientY - rect.top + 20;
+        });
+
+        button.addEventListener('mouseenter', () => isHovering = true);
+        button.addEventListener('mouseleave', () => {
+          isHovering = false;
+          ctx.clearRect(0, 0, canvas.width, canvas.height); 
+        });
+
+        const draw = () => {
+          if (isHovering) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            const radius = 60; 
+            const gradient = ctx.createRadialGradient(mouseX, mouseY, 0, mouseX, mouseY, radius);
+            gradient.addColorStop(0, 'rgba(255, 87, 34, 0.9)'); 
+            gradient.addColorStop(1, 'rgba(255, 87, 34, 0)');   
+            
+            ctx.lineWidth = 1.5;
+            ctx.strokeStyle = gradient;
+            
+            const brStr = getComputedStyle(button).getPropertyValue('--sb-radius');
+            const br = parseInt(brStr) || 50;
+            
+            ctx.beginPath();
+            ctx.roundRect(20, 20, rect.width, rect.height, br);
+            ctx.stroke();
+          }
+          requestAnimationFrame(draw);
+        };
+        draw();
+      });
+
+      // --- MAGIC BENTO BOX GLOW EFFECT ---
+      document.querySelectorAll('.feature-card, .screenshot-item, .highlight-content').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Pass the coordinates dynamically to CSS
+            card.style.setProperty('--glow-x', `${x}px`);
+            card.style.setProperty('--glow-y', `${y}px`);
+        });
       });
     </script>
   </body>
