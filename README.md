@@ -8,8 +8,12 @@ A modern, responsive promotional website for the Hercule fitness tracking app.
 - 📱 Fully responsive design for all devices
 - ⚡ Fast and lightweight (pure HTML & CSS)
 - 🖼️ Image gallery showcasing app features
+- 📋 Workout-program feature card and updated program screenshots
+- ✨ AI gym coach as the main hero, with a visible Beta badge and program creation workflow
 - 🎯 Clear call-to-action sections
-- 💫 Smooth animations and transitions
+- 💫 Smooth scrolling and hover transitions that respect reduced-motion preferences
+
+The original website design is retained. The AI coach leads the page, followed by feature cards for programs and workout tracking, the screenshot gallery, and downloads. The opening section has no Beta badge. The website states that all features are free during beta and no subscription is required. Update this copy when availability changes.
 
 ## Setup Instructions
 
@@ -17,7 +21,9 @@ A modern, responsive promotional website for the Hercule fitness tracking app.
 
 The gallery is wired to the latest uploaded screenshots in `assets/images`:
 
-- `dashboard-screen.png` - Main dashboard
+- `dashboard-screen.png` - Main dashboard with today's workout program
+- `programs-screen.png` - Saved programs and program selection
+- `ai-coach-screen.png` - AI coach beta chat with a proposed workout program
 - `profile-screen.png` - Profile and label overview
 - `calendar-screen.png` - Calendar view
 - `log-exercise-screen.png` - Exercise search and logging screen
@@ -31,6 +37,8 @@ Hercule is published on the App Store: https://apps.apple.com/gb/app/hercule-fit
 ### 2. Open the Website
 
 Simply open `index.html` in your browser to view the website locally.
+
+For a local HTTP preview, run `python3 -m http.server 8766 --bind 127.0.0.1` from this directory and open `http://127.0.0.1:8766`.
 
 ### 3. Deploy
 
@@ -47,27 +55,23 @@ You can deploy this website to any static hosting service:
 HerculeWebsite/
 ├── index.html          # Main HTML file
 ├── styles.css          # All styling
-├── images/            # App screenshots
-│   ├── dashboard-screen.png
-│   ├── profile-screen.png
-│   ├── calendar-screen.png
-│   ├── log-exercise-screen.png
-│   ├── edit-exercise-screen.png
-│   ├── share-day-screen.png
-│   └── IMG_0368.PNG
+├── assets/
+│   ├── images/        # App screenshots, including programs and AI coach
+│   ├── logo/          # Hercule SVG logo
+│   └── buttons/       # App Store and Google Play download badges
 └── README.md          # This file
 ```
 
 ## Customization
 
 ### Colors
-Edit the CSS variables in `styles.css` to match your brand:
+CSS variables in `styles.css` retain the original website palette:
 
 ```css
 :root {
     --primary-orange: #FF5722;
-    --dark-orange: #E64A19;
     --dark-bg: #0A0A0A;
+    --card-bg: #1A1A1A;
     /* ... */
 }
 ```

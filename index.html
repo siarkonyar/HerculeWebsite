@@ -19,12 +19,13 @@
           />
           <span class="logo-text">ercule</span>
         </div>
-        <button class="hamburger" aria-label="Toggle menu">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navigation-links">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
         </button>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navigation-links">
+          <li><a href="#ai-coach">AI Coach</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#screenshots">Screenshots</a></li>
           <li><a href="#download">Download</a></li>
@@ -33,23 +34,15 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- AI Coach Hero -->
+    <section id="ai-coach" class="hero" aria-labelledby="coach-title">
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-title">
-            Track Your Fitness Journey with
-            <span class="highlight"
-              ><img
-                src="assets/logo/logo.svg"
-                alt="H"
-                class="inline-logo"
-              />ercule</span
-            >
-          </h1>
+          <h1 id="coach-title" class="hero-title">Meet your <span class="hero-brand">AI gym coach</span></h1>
           <p class="hero-subtitle">
-            Track your workouts, monitor your progress, and achieve your fitness
-            goals with the ultimate workout companion.
+            Ask gym-related questions, get training guidance, and create
+            structured workout programs. Review a proposed program, then accept
+            it to save it directly to your programs.
           </p>
           <div class="cta-buttons">
             <a href="#download" class="btn btn-primary">Download Now</a>
@@ -59,9 +52,12 @@
         <div class="hero-image">
           <div class="phone-mockup">
             <img
-              src="assets/images/dashboard-screen.png"
-              alt="Hercule dashboard view"
+              src="assets/images/ai-coach-screen.png"
+              alt="Hercule AI beta conversation proposing a structured Leg Growth Program with exercises, sets, and rep ranges"
               class="screenshot-main"
+              width="1179"
+              height="2556"
+              fetchpriority="high"
             />
           </div>
         </div>
@@ -77,6 +73,22 @@
         </p>
 
         <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">✨</div>
+            <h3>Meet your AI gym coach</h3>
+            <p>
+              Ask gym-related questions, get training guidance, and create
+              structured workout programs. Review a proposed program, then accept
+              it to save it directly to your programs.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" aria-hidden="true">📋</div>
+            <h3>Build your own workout programs</h3>
+            <p>Create and save workout programs in Hercule.</p>
+          </div>
+
           <div class="feature-card">
             <div class="feature-icon">📅</div>
             <h3>Smart Calendar</h3>
@@ -139,16 +151,51 @@
     <!-- Screenshots Section -->
     <section id="screenshots" class="screenshots">
       <div class="container">
-        <h2 class="section-title">Screens from the new app flow</h2>
+        <h2 class="section-title">See Hercule in action</h2>
         <p class="section-subtitle">
-          A cleaner gallery built from the latest screenshots you uploaded
+          Explore the app, from workout logging to programs and AI coaching.
         </p>
 
         <div class="screenshots-grid">
           <div class="screenshot-item">
             <img
+              src="assets/images/programs-screen.png"
+              alt="Choose Program screen with saved workout programs"
+              width="1179"
+              height="2556"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="screenshot-caption">
+              <h4>Build your own workout programs</h4>
+              <p>Create and save workout programs in Hercule.</p>
+            </div>
+          </div>
+
+          <div class="screenshot-item">
+            <img
+              src="assets/images/ai-coach-screen.png"
+              alt="Hercule AI beta chat and proposed workout program"
+              width="1179"
+              height="2556"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="screenshot-caption">
+              <span class="beta-badge">Beta</span>
+              <h4>Meet your AI gym coach</h4>
+              <p>Ask gym-related questions, get training guidance, and create structured workout programs.</p>
+            </div>
+          </div>
+
+          <div class="screenshot-item">
+            <img
               src="assets/images/dashboard-screen.png"
               alt="Dashboard screen"
+              width="1179"
+              height="2556"
+              loading="lazy"
+              decoding="async"
             />
             <div class="screenshot-caption">
               <h4>Dashboard</h4>
@@ -157,7 +204,12 @@
           </div>
 
           <div class="screenshot-item">
-            <img src="assets/images/profile-screen.png" alt="Profile screen" />
+            <img src="assets/images/profile-screen.png" alt="Profile screen"
+              width="1206"
+              height="2622"
+              loading="lazy"
+              decoding="async"
+            />
             <div class="screenshot-caption">
               <h4>Profile & Labels</h4>
               <p>Keep streaks, stats, and label collection together</p>
@@ -168,6 +220,10 @@
             <img
               src="assets/images/calendar-screen.png"
               alt="Calendar screen"
+              width="1179"
+              height="2556"
+              loading="lazy"
+              decoding="async"
             />
             <div class="screenshot-caption">
               <h4>Calendar</h4>
@@ -179,6 +235,10 @@
             <img
               src="assets/images/log-exercise-screen.png"
               alt="Log exercise screen"
+              width="1179"
+              height="2556"
+              loading="lazy"
+              decoding="async"
             />
             <div class="screenshot-caption">
               <h4>Log Exercise</h4>
@@ -190,6 +250,10 @@
             <img
               src="assets/images/edit-exercise-screen.png"
               alt="Edit exercise screen"
+              width="1206"
+              height="2622"
+              loading="lazy"
+              decoding="async"
             />
             <div class="screenshot-caption">
               <h4>Edit Exercise</h4>
@@ -201,6 +265,10 @@
             <img
               src="assets/images/share-day-screen.png"
               alt="Share day screen"
+              width="1074"
+              height="2504"
+              loading="lazy"
+              decoding="async"
             />
             <div class="screenshot-caption">
               <h4>Share Your Day</h4>
@@ -212,7 +280,7 @@
     </section>
 
     <!-- Key Features Highlight -->
-    <section class="highlight">
+    <section id="tracking" class="highlight">
       <div class="container">
         <div class="highlight-content">
           <div class="highlight-text">
@@ -235,6 +303,10 @@
             <img
               src="assets/images/dashboard-screen.png"
               alt="Dashboard preview"
+              width="1179"
+              height="2556"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -274,7 +346,7 @@
             </a>
           </div>
           <p class="download-note">
-            Free to download • No ads • Privacy focused
+            Free for everyone during beta. No subscription required.
           </p>
         </div>
       </div>
@@ -299,6 +371,7 @@
             <div class="footer-column">
               <h4>Product</h4>
               <ul>
+                <li><a href="#ai-coach">AI Coach</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#screenshots">Screenshots</a></li>
                 <li><a href="#download">Download</a></li>
@@ -347,24 +420,36 @@
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
 
+      const closeMenu = () => {
+        hamburger.classList.remove("active");
+        navLinks.classList.remove("active");
+        hamburger.setAttribute("aria-expanded", "false");
+      };
+
       hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navLinks.classList.toggle("active");
+        const isOpen = hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active", isOpen);
+        hamburger.setAttribute("aria-expanded", String(isOpen));
       });
 
       // Close menu when clicking on a link
       document.querySelectorAll(".nav-links a").forEach((link) => {
         link.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          navLinks.classList.remove("active");
+          closeMenu();
         });
       });
 
       // Close menu when clicking outside
       document.addEventListener("click", (e) => {
         if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-          hamburger.classList.remove("active");
-          navLinks.classList.remove("active");
+          closeMenu();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && navLinks.classList.contains("active")) {
+          closeMenu();
+          hamburger.focus();
         }
       });
     </script>
