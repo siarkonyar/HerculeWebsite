@@ -90,4 +90,4 @@ CSS variables in `styles.css` retain the original website palette:
 
 ## License
 
-© 2025 Hercule. All rights reserved.
+© 2026 Hercule. All rights reserved.
